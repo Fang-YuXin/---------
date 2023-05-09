@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<?php
+	$link = mysqli_connect("localhost","a0107","pwd0107");
+	mysqli_query($link,'SET NAMES UTF8');
+	mysqli_select_db($link,"a0107");
+
+	$orderid = $_POST['orderid'];
+	$radio = $_POST['radio'];
+  	
+
+
+  	$sqlstr1 = "SELECT * FROM `Order` WHERE orderid = '$orderid'";
+	$result1 = mysqli_query($link, $sqlstr1);
+	$maxrow = mysqli_num_rows($result1);
+
+	if ($maxrow >1) {
+		for($i = 0;$i < $maxrow; $i++)
+		{
+		$sqlstr2 = "UPDATE `Order` SET situation='$radio' WHERE orderid = '$orderid'";
+		mysqli_query($link, $sqlstr2);
+		}
+	}
+	else{
+		$sqlstr2 = "UPDATE `Order` SET situation='$radio' WHERE orderid = '$orderid'";
+		mysqli_query($link, $sqlstr2);
+	}
+	
+
+	echo "<script>alert('已改變訂單狀況')</script>";
+	header("refresh:0;url=../back.html");
+	mysqli_free_result($result1);
+	mysqli_close($link);;
+
+
+?>
+</body>
+</html>

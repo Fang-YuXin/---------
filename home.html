@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/home.css"> 
+
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/js-style.js"></script>
+
+</head>
+
+<body>
+	<div id="wrap" id=top>
+
+    <!-- 回到頁首的按鈕-s -->
+    <a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px; ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- 回到頁首-e -->
+
+    
+  <!-- <div class="news">Packs are on SALE!!!</div>
+ -->
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 sticky-top">
+      
+    <div class="container" > <!-- 使用container將導覽列置中 -->
+      <!-- <a class="navbar-brand" href="home.html">
+        <div id="logo">LOGO</div>
+      </a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <!-- 左半部選單-s -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav s-navbar-font mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="#top" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;color: gray;">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            
+            <a class="nav-link" href="#history" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;">history</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;">
+              introduce
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">清水岩寺</a>
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">清水岩生態展示中心</a>       
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">樂活襪之鄉博物館</a>   
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">福井鐵道文化館</a>     
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">台灣手套博物館</a> 
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">新和春醬油漬物工廠</a> 
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;">
+              shop now
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="travel.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">Travel</a>
+              <a class="dropdown-item" href="souvenir.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">Souvenir</a>                           
+            </div>
+          </li>
+        </ul>
+        </div>
+<!-- 左半部選單-e -->
+
+<!-- 右半部選單-s -->
+        <!-- <div class="navright">
+    
+        <div id="headerLinks">
+          <a href="login.html" title="Login">Login</a>
+          <a href="signup.html" title="Register">Register</a>
+        </div> 
+       <div id="search">
+              <input class="searchtext form-control w-50 mr-sm-2" type="search" placeholder="find..." aria-label="Search">
+              <button class="btn btn-outline-info" type="submit">Search</button>
+        </div>
+        </div> -->
+<!-- 右半部選單-e -->
+
+   
+
+  </div> <!-- <div class="container"> -->
+</nav><!-- 導覽列-e -->
+
+
+<!-- 輪播-s -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<!-- 預設只有三張圖輪播 目前增加至四張圖   -->
+  <ol class="carousel-indicators">
+  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>      	
+  </ol>
+
+<!-- 
+使用背景圖去取代 img 的手法，主要是因背景圖比較大張，希望能將重心放在圖片垂直、水平的中間
+有些圖片不夠寬 也會自動滿版延伸
+s-carousel-item s-bg-cover 
+-->
+  <div class="carousel-inner">
+    <div class="carousel-item s-carousel-item s-bg-cover active" style="background-image: url(images/img_1.jpg);">
+
+    </div>
+    <div class="carousel-item s-carousel-item s-bg-cover" style="background-image: url(images/img_2.jpg);">
+
+    </div>
+    <div class="carousel-item s-carousel-item s-bg-cover" style="background-image: url(images/img_3.jpg);">
+
+    </div>
+    <div class="carousel-item s-carousel-item s-bg-cover" style="background-image: url(images/img_4.jpeg);">
+
+    </div>    
+    
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<!-- 輪播-e -->
+
+
+<!-- 三欄內容-s -->
+<section class="py-4 text-white" style="background-color:#a2b59f">
+	<div class="container">
+		<div class="row">
+
+<!-- -------img1------- -->
+
+			<div class="col-sm-6 col-md-4">
+				<div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+				<a href="introduce.html"><img src="images/introduce_1.jpg" alt="" style="height: 225px; width: 400px; background-size: auto; border-radius: 15px;display:block; margin:auto;border:5px #f8f9fa solid"></a>
+				<p class="s-p-text-align" style="margin-top: 10px;font-size: 36px;color: gray;text-align: center;">清水岩寺
+				</p>
+			</div>
+
+<!-- -------img2------- -->
+
+			<div class="col-sm-6 col-md-4">
+				<div class="mb-2 text-center"><i class="fas fa-user-cog fa-4x"></i></div>
+				<a href="introduce.html "><img src="images/introduce_2.png" alt="" style="height: 220px; width:400px; background-size: auto; border-radius: 15px;display:block; margin:auto;border:5px #f8f9fa solid"></a>
+				<p class="s-p-text-align" style="margin-top: 10px;font-size: 36px;color: gray;text-align: center;">清水岩生態展示中心
+				</p>			
+			</div>
+
+<!-- -------img3------- -->
+
+			<div class="col-sm-6 col-md-4">
+				<div class="mb-2 text-center"><i class="fas fa-user-secret fa-4x"></i></div>
+				<a href="introduce.html"><img src="images/introduce_3.jpg" alt="" style="height: 225px; width: 400px; background-size: auto; border-radius: 15px;display:block; margin:auto;border:5px #f8f9fa solid"></a>
+				<p class="s-p-text-align" style="margin-top: 10px;font-size: 36px;color: gray;text-align: center;">樂活襪之鄉博物館
+				</p>			
+			</div>
+
+<!-- -------img4------- -->
+
+			<div class="col-sm-6 col-md-4">
+				<div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+				<a href="introduce.html"><img src="images/introduce_4.jfif" alt="" style="height: 225px; width: 400px; background-size: auto; border-radius: 15px;display:block; margin:auto;border:5px #f8f9fa solid;margin-top: 24px;"></a>
+				<p class="s-p-text-align" style="margin-top: 10px;font-size: 36px;color: gray;text-align: center;">福井鐵道文化館
+				</p>
+			</div>
+
+<!-- -------img5------- -->
+
+			<div class="col-sm-6 col-md-4">
+				<div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+				<a href="introduce.html"><img src="images/introduce_5.jpg" alt="" style="height: 225px; width: 400px; background-size: auto; border-radius: 15px;display:block; margin:auto;border:5px #f8f9fa solid;margin-top: 24px;"></a>
+				<p class="s-p-text-align" style="margin-top: 10px;font-size: 36px;color: gray;text-align: center;">台灣手套博物館
+				</p>
+			</div>
+
+<!-- -------img6------- -->
+
+			<div class="col-sm-6 col-md-4">
+				<div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+				<a href="introduce.html"><img src="images/introduce_6.jfif" alt="" style="height: 225px; width: 400px; background-size: auto; border-radius: 15px;display:block; margin:auto;border:5px #f8f9fa solid;margin-top: 24px;"></a>
+				<p class="s-p-text-align" style="mmargin-top: 10px;font-size: 36px;color: gray;text-align: center;">新和春醬油漬物工廠
+				</p>
+			</div>
+
+
+		</div>
+	</div>	
+</section>
+<!-- 三欄內容-e -->
+
+
+<!-- 二欄式一半全版面，一半固定式-s -->
+<section class="container-fluid py-4 bg-light text-white" style="position: relative;height: 300px;" id="history">
+	<div class="row">
+<!-- 左半部		 -->
+		<div class="col-md-5 s-bg-cover" style="background-image: url(images/maps.jpg);position: absolute;top:0;bottom:0;background-size: contain;background-repeat: no-repeat;">		
+		</div>
+		
+<!-- 右半部		 -->		
+		<div class="container">
+			<div class="row justify-content-end s-text-md-dark">
+
+				<div class="col-md-7">
+					<h5 style="font-size: 36px;">歷史介紹</h5>
+					<p class="s-p-text-align" style="font-size:24px">
+						社頭鄉位於臺灣彰化縣東南部。據耆老相傳，在明末清初，漢人移居臺灣，稱番人聚落為「社」，「社頭」地名蓋因洪雅族大武郡社之頭首或頭人居住於此，以之得名。
+					</p>
+					<button type="button" class="btn btn-outline-info btn-sm mt-3 btn-lg" data-toggle="modal" data-target="#exampleModalLong">了解更多</button>
+					<!-- <a href="history.html" class="btn btn-outline-info btn-sm mt-3 btn-lg">了解更多</a> -->
+
+<!-- 再切兩欄-s -->
+					<!-- <div class="row mt-3">
+						<div class="col-md-6">
+							<h5>菜單介紹 1</h5>
+							<p class="s-p-text-align">
+								小孩成就不可以農村尺寸他是主頁還會硬件市委唯一素質建設安全登，鑒定閲讀不用基於法人顏色，不能下載並在請大家核心小區較高愛情適用大，笑話我覺得政策你是傳，萬元神話全面初步不到頁面收入工商以下名字權益期待快捷拒。
+							</p>						
+						</div>
+						<div class="col-md-6">
+							<h5>菜單介紹 2</h5>
+							<p class="s-p-text-align">
+								設置之下對我你是股份有，本公司享受類型而是特性評級兒子他們的三大批評一，一口徹底招生背景不錯市場價接口保護過了試驗維修選項皮，熱點同時拍攝這位生日關鍵字要有風險。
+							</p>													
+						</div>
+					</div> -->
+<!-- 再切兩欄-e -->
+
+				</div>						
+			</div>
+		</div>
+
+
+	</div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">History</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="font-size:24px;line-height: 36px;">
+        『社頭』地名的起源，背後有著寶島台灣開拓史濃厚的典故餘韻。 <br>
+        話說四百年前，台灣仍是一處尚未開發的美麗島嶼，在中部彰化平原的東南，居住著一群南島語系的平埔族人，當時有一個富饒的原住部落名為『大武郡社』。<br>
+        在經歷西班牙人、荷蘭人的登台足跡後，明末清初，漢人開始渡海來台，開墾這片美麗新天地。<br>
+        漢人習慣稱呼平埔族人聚集的部落為『社』；而『社頭』即代表當時這裡乃為大武郡社頭目首領居住之地，因此得名。<br><br><br>
+
+				清朝(暨之前):西班牙、荷蘭人 佔領台灣。<br>
+				●明永曆15年（西元1661年）鄭成功趕走荷蘭人，開始設置府縣治理台灣。<br>
+				●清康熙22年（西元1683年）鄭克塽降清，次年台灣納入清朝版圖，當時大武郡（今社頭鄉）隸屬諸羅縣。<br>
+				●康熙中葉（約西元1698年）漢人先民開始渡海來台，先後來到大武社郡（今社頭鄉)開墾。<br>
+				●康熙58年（西元1719年）墾首施世榜廣聚資金開圳引水，完成濁水圳（又名施厝圳，今名八堡圳），流經本鄉。<br>
+				●康熙60年（西元1721年）黃仕卿開鑿十五庄圳（今稱八堡二圳）至大武郡（今社頭鄉)。<br>
+				●雍正元年（西元1723年），設彰化縣，大武郡堡改隸屬彰化縣。<br>
+				●雍正4年（西元1726年），鄧遜有等人在大武郡（今社頭）開鑿鴻門圳及大高圳，自此社頭灌溉渠道綿密完備，成就良田千頃，物產富饒直至今日。<br>
+				●乾隆年間，枋橋頭庄街肆成型。<br>
+				●雍正12年（西元1734年）大武郡堡分為東、西二堡，今日社頭鄉屬於『大武郡東堡』。<br>
+				●嘉慶年間，社頭庄成立。由於移民日增，社頭區域開發村莊日益增多。<br>
+				●甲午戰爭，清朝戰敗，李鴻章於日本春帆樓簽下馬關條約，將台灣、澎湖割讓日本。
+				日治時期。<br>
+				●西元1895年至1945年，社頭歸屬台中民政支部彰化出張所轄下的武東堡。<br>
+				●台中州成立，本鄉改隸於台中州員林郡管轄，此時鄉名也由清朝時的『社頭街』改為『社頭庄』。此名沿用至台灣光復後，未曾再變。<br>
+				民國：<br>
+				●民國34年（西元1945年）十月台灣光復，改州為縣，改郡為區，社頭鄉隸屬『台中縣員林區』。<br>
+				●民國39年（西元1950年）實施地方自治，行政區域調整，社頭鄉改隸彰化縣，時至今日。<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 二欄式一半全版面，一半固定式-e -->
+
+
+
+
+
+<!-- GoogleMap地圖 & form 表單-s -->
+
+<section>
+	<div class="py-4" style="background-color: #a2b59f">
+		<div class="container">
+			<div class="row">
+
+			<div class="col-lg-6">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172361.43099239728!2d120.5159116340244!3d23.917620266060133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469344583e968d5%3A0xc43658840c70a3c!2zNTEx5b2w5YyW57ij56S-6aCt6YSJ56S-6aCt!5e0!3m2!1szh-TW!2stw!4v1655367812050!5m2!1szh-TW!2stw" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+			</div>
+
+
+			<div class="col-lg-6">
+<!-- 基本樣版參考 -->
+<!-- 
+				<form action="order.php">
+					<label for=""></label>
+					<input type="text" class="form-control" id="" placeholder="">
+ 			   </form>
+ -->			
+ 			<h4>網頁建議回饋單</h4>		
+
+ 		<div id="form">
+			<form action="php/error.php" method="POST" target="nm_iframe">
+
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="name">客戶姓名</label>
+			      <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="phone">連絡電話</label>
+			      <input name="phone" type="text" class="form-control" id="phone" placeholder="09XX-XXXXXX">
+			    </div>
+					<div class="form-group col-md-6">
+			      <label for="email">聯絡信箱</label>
+			      <input name="email" type="text" class="form-control" id="email" placeholder="abc@XXX.com">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="mes">留言日期</label>
+			      <input name="mes" type="date" class="form-control" id="mes" placeholder="yyyy-mm-dd">
+			    </div>
+
+			    </div>
+			  	<div class="form-group">
+			     
+			      <label for="suggest">改善建議</label>
+			      <input name="suggest" type="text" class="form-control" id="suggest" placeholder="建議、想法">
+			    </div>
+
+			   <input name="button" type="submit" class="btn btn-info" id="button" value="送出" onclick="window.alert('回饋表單已送出，請重新載入頁面，感謝您的建議!')">
+          
+      </form>
+      <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+    </div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- GoogleMap地圖 & form 表單-e -->
+
+
+<!-- 回到頁首的按鈕-s -->
+<a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px; ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+<!-- 回到頁首-e -->
+
+
+
+
+<!-- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

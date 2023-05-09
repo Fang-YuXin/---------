@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/travel.css"> 
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/js-style.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+
+    <!-- 回到頁首的按鈕-s -->
+    <a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px;background-color:#53D3DE;">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- 回到頁首-e -->
+
+    
+  <!-- <div class="news">Packs are on SALE!!!</div>
+ -->
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 sticky-top first-nav">
+      
+    <div class="container" > <!-- 使用container將導覽列置中 -->
+      <!-- <a class="navbar-brand" href="home.html">
+        <div id="logo">LOGO</div>
+      </a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <!-- 左半部選單-s -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav s-navbar-font mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="home.html" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right:30px;color:gray ;" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            
+            <a href="home.html" class="nav-link" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;">history</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;">
+              introduce
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">清水岩寺</a>
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">清水岩生態展示中心</a>       
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">樂活襪之鄉博物館</a>   
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">福井鐵道文化館</a>     
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">台灣手套博物館</a> 
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">新和春醬油漬物工廠</a> 
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;">
+              shop now
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#" style="font-family:oxxo,Cambria,serif;font-size: 26px;">Travel</a>
+              <a class="dropdown-item" href="souvenir.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">Souvenir</a>                           
+            </div>
+          </li>
+        </ul>
+        </div>
+<!-- 左半部選單-e -->
+  </div> <!-- <div class="container"> -->
+</nav><!-- 導覽列-e -->
+
+<h1 style="margin:0 auto;font-size: 36px; text-align: center;background-color:#a2b59f/* #f8f9fa*/;">旅遊團</h1>
+
+
+<!-- 第二個navbar-s -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 sticky-top second-nav" style="background-color:#a2b59f;border-top: 2.4px solid gray;border-bottom: 2px solid gray;width: 700px; margin: 0 auto; font-size: 18px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="navbar-collapse collapse" id="navbar2">
+        <ul class="navbar-nav" style="margin: 0 auto;font-size: 24px;">
+            <li class="nav-item active">
+                <a class="nav-link" href="#day1" style="color: gray;">一日遊<span class="sr-only">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#day2">兩天一夜</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#signup">旅行團報名處</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#signup_char">旅行團名單</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 第二個navbar-e -->
+
+<!-- 第一個行程-s -->
+<section class="page-section" id="day1">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 36px" >一日遊~彰化輕旅行</h2>
+                    <h3 class="section-subheading text-muted" style="font-size: 32px">日期:2022-12-10</h3>
+                </div><br>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T1_1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">清水那方游憩園地</h4>
+                                <h4 class="subheading" style="font-size:20px">10:00~12:00</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted" style="font-size: 18px;">清水那方打造一站式的溫泉渡假玩樂勝地結合豪華露營、森林泡湯、日式湯屋及生態清水那方游憩園地，全區佔地約12公頃擁有豐富的大自然生態及獨特的美人甘露泉，可漫步森林及泡日式足湯園區裡也有規畫小朋友最愛的親子遊憩區假期開放餐廳、咖啡館及小吃的供應。</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T1_2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">福丼食堂</h4>
+                                <h4 class="subheading" style="font-size:20px">12:10~13:30</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted" style="font-size: 18px;">彰化創意美食便當餐廳-福丼食堂火車的建築外觀，走進餐廳就像在搭火車車內超多小火車的收藏，還有特色的車廂設計來福丼食堂吃簡餐，感受在火車上享受美食特別的是，餐廳裡不時還會發出火車的聲音來這吃飯好有臨場感，絕對是特別的用餐體驗。</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T1_3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">台灣手套博物館</h4>
+                                <h4 class="subheading" style="font-size:20px">13:40~17:00</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">台灣手套博物館佔地寬敞，入園免門票擁有全世界最大的手套，根本是巨人戴的手套博物館到處都是古錐的手套公仔來到手套博物館，能學習手套的歷史和知識台灣手套博物館還有很多親子互動小遊戲像是套圈圈、釣魚和相關的手作DIY走上頂樓，還可以欣賞高鐵在軌道上奔馳。</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T1_4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">銀河鐵道望景餐廳</h4>
+                                <h4 class="subheading" style="font-size:20px">17:15~19:30</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">銀河鐵道望景餐廳擁有遼闊寬廣的視野來訪可以用餐，也能簡單站在觀景平台，就能飽覽城市之美重點是，還能隨時欣賞高鐵在鐵軌上奔馳近距離感受高鐵時速300公里的速度與震撼銀河鐵道景觀優美，能將壯麗群山盡收眼底白天景緻壯麗廣闊，夜裡點燈夢幻迷人。</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><a href="https://goo.gl/maps/uSLxS2ntPABa4YAF6" target=_blank>
+                            <img class="rounded-circle img-fluid" src="images/google maps.jpg" alt="..." /></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+<!-- 第一個行程-e -->
+
+<br id=day2><br><br><br><br><br>
+
+<!-- 第二個行程-s -->
+<section class="page-section" >
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase" style="font-size: 36px" >二天一夜~周末玩彰化</h2>
+                    <h3 class="section-subheading text-muted" style="font-size: 32px">日期:2022-12-17~2022-12-18</h3>
+                </div><br>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T2_1.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">清水岩寺、生態展示中心</h4>
+                                <h4 class="subheading" style="font-size:20px">10:00~12:00</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted" style="font-size: 18px;">清水岩寺建於清朝雍正，至今已經有277年的歷史，是台灣最先供奉三寶佛的寺廟，而清水岩寺又因地出泉水、而有清水春光的美名，更是彰邑八景之一！<br>生態展示中心就位在清水岩寺旁邊，建築外型有如一隻大型獨角仙，館內收藏豐富珍貴的昆蟲標本，近千件標本展示，很富有寓教於樂的意義。</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T1_2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">福丼食堂</h4>
+                                <h4 class="subheading" style="font-size:20px">12:10~13:30</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted" style="font-size: 18px;">彰化創意美食便當餐廳-福丼食堂火車的建築外觀，走進餐廳就像在搭火車車內超多小火車的收藏，還有特色的車廂設計來福丼食堂吃簡餐，感受在火車上享受美食特別的是，餐廳裡不時還會發出火車的聲音來這吃飯好有臨場感，絕對是特別的用餐體驗。</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T2_3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">樂活襪之鄉博物館</h4>
+                                <h4 class="subheading" style="font-size:20px">13:40~17:00</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">彰化縣社頭鄉為織襪的故鄉，全台每十雙襪子就有七雙來自社頭。樂活襪之鄉為全台第一座織襪觀光工廠，獨家專利釘標機及手工對目線技術產出優良品質好襪，廠區參觀動線為一二樓，一樓為商品販售區、老少咸宜的DIY體驗區、製程參觀區，二樓為導覽簡介區，希望將台灣製造的好襪推廣至海內外。</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T2_4.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">清水那方豪華露營區</h4>
+                                <h4 class="subheading" style="font-size:20px">17:15~19:30</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">清水那方豪華露營區目前規劃有遊憩區、野餐區、活動草坪、森林豪華露營帳篷、活動廣場、美食餐廳等，其中每個豪華露營帳篷有12坪超大空間，挑高5米，villa式獨立樹林庭院、五星酒店床鋪設施、獨立冷暖空調設備、每帳獨立衛浴、溫泉Spa浴缸。</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T2_5.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">新和春醬油漬物工廠</h4>
+                                <h4 class="subheading" style="font-size:20px">10:00~12:00</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted" style="font-size: 18px;">這間位於彰化社頭社斗路上的新和春醬油漬物工廠，是一間彰化社頭購買伴手禮的好去處新和春醬油漬物工廠創立於日本大正時期，為台灣碩果僅存的乾式純釀百年老店，原料取自上等黑豆釀造而成到新和春買醬油可以挑選各種等級的醬油外，也可以參觀釀造醬油的過程，至今仍保存相當多的相關文物唷</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T2_6.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">社頭蒜頭麵</h4>
+                                <h4 class="subheading" style="font-size:20px">12:10~13:30</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted" style="font-size: 18px;">社頭蒜頭麵是社頭人最常吃的小吃之一，吃過一次都會再回訪，口味較清爽不油膩，最有特色就是自己加入滿滿的蒜泥，那種香氣相當逼人。</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="images/T1_3.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 style="font-size:24px">台灣手套博物館</h4>
+                                <h4 class="subheading" style="font-size:20px">13:40~17:00</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">台灣手套博物館佔地寬敞，入園免門票擁有全世界最大的手套，根本是巨人戴的手套博物館到處都是古錐的手套公仔來到手套博物館，能學習手套的歷史和知識台灣手套博物館還有很多親子互動小遊戲像是套圈圈、釣魚和相關的手作DIY走上頂樓，還可以欣賞高鐵在軌道上奔馳。</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><a href="https://goo.gl/maps/LRcxFE1eGsnrM8Uu6" target=_blank>
+                            <img class="rounded-circle img-fluid" src="images/google maps.jpg" alt="..." /></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+<!-- 第二個行程-e -->
+<br id=signup><br><br><br><br><br>
+<section style="background-color:#a2b59f">
+<div class="container" style="background-color:#a2b59f">
+<h1 style="margin:0 auto;font-size: 36px; text-align: center;background-color:#a2b59f;">填寫表單報名</h1>
+<!-- 報名處-s -->
+
+    <div id="form_1">
+        <form action="php/signup.php" method="POST" target="nm_iframe" >
+
+          <div class="form-row" style="background-color:#a2b59f ;">
+            <div class="form-group col-md-6">
+                <label for="name" style="font-size:26px;background-color:#a2b59f ;">客戶姓名</label>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="pid" style="font-size:26px;background-color:#a2b59f ;">身分證字號</label>
+                <input name="pid" type="text" class="form-control" id="pid" placeholder="A123456789">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="phone" style="font-size:26px;background-color:#a2b59f;">出生日期</label>
+                <input name="birthday" type="date" class="form-control" id="phone" placeholder="">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="phone" style="font-size:26px;background-color:#a2b59f;">連絡電話</label>
+              <input name="phone" type="text" class="form-control" id="phone" placeholder="09XX-XXXXXX">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="email" style="font-size:26px;background-color:#a2b59f;">聯絡信箱</label>
+              <input name="email" type="text" class="form-control" id="email" placeholder="abc@XXX.com">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="email" style="font-size:26px;background-color:#a2b59f;">預計報名(擇一)</label><br>
+                <input type="radio" name="radio" id="radio" value="一日遊">
+                <span style="font-size:26px;background-color:#a2b59f;">一日遊</span>
+                <input type="radio" name="radio" id="radio2" value="兩天一夜">
+                <span style="font-size:26px;background-color:#a2b59f;">兩天一夜</span>
+            </div>
+                <input name="button" type="submit" class="btn btn-info" id="button" value="送出" onclick="window.alert('已報名成功，請重新載入頁面，並到旅行團名單確認')">
+        </div>    
+    </form>
+    <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+    </div>
+</div>
+</section>
+
+<!-- 報名處-e -->
+
+<br id=signup_char>
+<section>
+    <h1 style="margin:0 auto;font-size: 36px; text-align: center;">目前參加旅行團名單</h1><br>   
+    <div class="container"> 
+        <iframe src="php/signup_char_1.php" frameborder="2" style="width: 550px;"></iframe> 
+        <iframe src="php/signup_char_2.php" frameborder="2" style="width: 550px;"></iframe>
+    </div><br>
+</section>
+
+
+<!-- GoogleMap地圖 & form 表單-s -->
+
+<section>
+  <div class="py-4" style="background-color: #a2b59f">
+    <div class="container">
+      <div class="row">
+
+      <div class="col-lg-6" style="background-color: #a2b59f">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172361.43099239728!2d120.5159116340244!3d23.917620266060133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469344583e968d5%3A0xc43658840c70a3c!2zNTEx5b2w5YyW57ij56S-6aCt6YSJ56S-6aCt!5e0!3m2!1szh-TW!2stw!4v1655367812050!5m2!1szh-TW!2stw" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+      </div>
+
+
+      <div class="col-lg-6" style="background-color: #a2b59f">
+<!-- 基本樣版參考 -->
+<!-- 
+        <form action="order.php">
+          <label for=""></label>
+          <input type="text" class="form-control" id="" placeholder="">
+         </form>
+ -->      
+      <h4 style="background-color: #a2b59f">網頁建議回饋單</h4>    
+
+    <div id="form" style="background-color: #a2b59f">
+      <form action="php/error.php" method="POST" target="nm_iframe">
+
+        <div class="form-row" style="background-color: #a2b59f">
+          <div class="form-group col-md-6" style="background-color:#a2b59f">
+            <label for="name" style="background-color:#a2b59f">客戶姓名</label>
+            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="form-group col-md-6" style="background-color:#a2b59f">
+            <label for="phone" style="background-color:#a2b59f">連絡電話</label>
+            <input name="phone" type="text" class="form-control" id="phone" placeholder="09XX-XXXXXX">
+          </div>
+          <div class="form-group col-md-6" style="background-color:#a2b59f">
+            <label for="email" style="background-color:#a2b59f">聯絡信箱</label>
+            <input name="email" type="text" class="form-control" id="email" placeholder="abc@XXX.com">
+          </div>
+          <div class="form-group col-md-6" style="background-color:#a2b59f">
+            <label for="mes" style="background-color:#a2b59f">留言日期</label>
+            <input name="mes" type="date" class="form-control" id="mes" placeholder="yyyy-mm-dd">
+          </div>
+
+          </div>
+          <div class="form-group" style="background-color:#a2b59f">
+           
+            <label for="suggest" style="background-color:#a2b59f">改善建議</label>
+            <input name="suggest" type="text" class="form-control" id="suggest" placeholder="建議、想法">
+          </div>
+
+          <input name="button" type="submit" class="btn btn-info" id="button" value="送出" onclick="window.alert('回饋表單已送出，請重新載入頁面，感謝您的建議!')">         
+      </form>
+        <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GoogleMap地圖 & form 表單-e -->
+
+
+<!-- 回到頁首的按鈕-s -->
+<a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px; ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+<!-- 回到頁首-e -->
+
+
+
+
+<!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

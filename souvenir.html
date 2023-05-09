@@ -1,0 +1,428 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>Souvenir</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+<link href="css/souvenir.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/js-style.js"></script> 
+
+
+</head>
+<body>
+<div id="wrap">
+
+    <!-- 回到頁首的按鈕-s -->
+    <a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px;background-color:#53D3DE;">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <!-- 回到頁首-e -->
+
+    
+  <!-- <div class="news">Packs are on SALE!!!</div>
+ -->
+   
+   <nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 sticky-top first-nav">
+      
+    <div class="container" > <!-- 使用container將導覽列置中 -->
+      <!-- <a class="navbar-brand" href="home.html">
+        <div id="logo">LOGO</div>
+      </a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <!-- 左半部選單-s -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav s-navbar-font mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link " href="home.html" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right:30px;color:gray ;" >Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            
+            <a href="home.html" class="nav-link" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;">history</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;">
+              introduce
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">清水岩寺</a>
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">清水岩生態展示中心</a>       
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">樂活襪之鄉博物館</a>   
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">福井鐵道文化館</a>     
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">台灣手套博物館</a> 
+              <a class="dropdown-item" href="introduce.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">新和春醬油漬物工廠</a> 
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-family:oxxo,Cambria,serif;font-size: 30px;padding-right: 30px;">
+              shop now
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="travel.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">Travel</a>
+              <a class="dropdown-item" href="souvenir.html" style="font-family:oxxo,Cambria,serif;font-size: 26px;">Souvenir</a>                           
+            </div>
+          </li>
+        </ul>
+        </div>
+<!-- 左半部選單-e -->
+  </div> <!-- <div class="container"> -->
+</nav><!-- 導覽列-e -->
+
+<h1 style="margin:0 auto;font-size: 36px; text-align: center;background-color:#a2b59f/* #f8f9fa*/;">伴手禮專區</h1>
+
+<!-- 第二個navbar-s -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light pb-0 sticky-top second-nav" style="background-color:#a2b59f;border-top: 2.4px solid gray;border-bottom: 2px solid gray;width: 800px; margin: 0 auto; font-size: 18px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="navbar-collapse collapse" id="navbar2">
+        <ul class="navbar-nav active_1" style="margin: 0 auto;font-size: 24px;">
+            <li class="nav-item active" style="padding-left: 10px;">
+                <a class="nav-link" href="#mes" style="color:gray;">伴手禮資訊<span class="sr-only">Home</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#order" style="color:gray;">購買伴手禮</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#check" style="color:gray;">查詢訂單狀況</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#allcheck" style="color:gray;">查詢所有交易紀錄</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- 第二個navbar-e -->
+<br id=mes><br>
+<h1 style="margin:0 auto;font-size:36px;text-align:center;">伴手禮資訊</h1>
+
+
+
+<section class="py-4 text-white">
+  <div class="container">
+    <div class="row">
+<!-- -------img1------- -->
+
+      <div class="col-sm-6 col-md-6 S_wrap">
+        <div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+        <a href="product/product01.html" target="_blank"><img src="images/S1.jpg" class="S_img"></a>
+        <p class="s-p-text-align S_text">【社頭鄉農會】芭樂心葉茶</p>
+      </div>
+
+<!-- -------img2------- -->
+
+      <div class="col-sm-6 col-md-6 S_wrap">
+        <div class="mb-2 text-center"><i class="fas fa-user-cog fa-4x"></i></div>
+        <a href="product/product02.html" target="_blank"><img src="images/S2.jpg" class="S_img"></a>
+        <p class="s-p-text-align S_text">【社頭鄉農會】8樂鮮果禮盒</p>      
+      </div>
+
+<!-- -------img3------- -->
+
+       <div class="col-sm-6 col-md-4 S_wrap">
+        <div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+        <a href="product/product03.html" target="_blank"><img src="images/S3.jpg" class="S_img"></a>
+        <p class="s-p-text-align S_text">極抗臭超機能竹炭運動襪</p>
+      </div>
+
+
+<!-- -------img4------- -->
+
+      <div class="col-sm-6 col-md-4 S_wrap">
+        <div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+        <a href="product/product04.html" target="_blank"><img src="images/S4.jpg" class="S_img"></a>
+        <p class="s-p-text-align S_text">極抗臭兒童休閒襪6~9歲</p>
+      </div>
+
+<!-- -------img5------- -->
+
+      <div class="col-sm-6 col-md-4 S_wrap">
+        <div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+        <a href="product/product05.html" target="_blank"><img src="images/S5.png" class="S_img"></a>
+        <p class="s-p-text-align S_text">河童君襪子娃娃DIY組合包</p>
+      </div>
+
+<!-- -------img6------- -->
+
+      <div class="col-sm-6 col-md-4 S_wrap">
+        <div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+        <a href="product/product06.html" target="_blank"><img src="images/S6.jpg" class="S_img"></a>
+        <p class="s-p-text-align S_text">壼底油-原味初釀</p>
+      </div>
+
+<!-- -------img7------- -->
+
+      <div class="col-sm-6 col-md-4 S_wrap">
+        <div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+        <a href="product/product07.html" target="_blank"><img src="images/S7.jpg" class="S_img"></a>
+        <p class="s-p-text-align S_text">醇壺底-黑豆蔭油</p>
+      </div>
+
+<!-- -------img8------- -->
+
+      <div class="col-sm-6 col-md-4 S_wrap">
+        <div class="mb-2 text-center"><i class="fas fa-users fa-4x"></i></div>
+        <a href="product/product08.html" target="_blank"><img src="images/S8.jpg" class="S_img"></a>
+        <p class="s-p-text-align S_text">傳統豆腐乳(甜酒口味)</p>
+      </div>      
+    </div>
+  </div>  
+</section>
+<!-- 三欄內容-e -->
+
+
+
+<br id=order><br><br><br><br>
+<section>
+<div class="container" style="padding-bottom: 30px;">   
+<h1 style="margin:0 auto;font-size: 36px; text-align: center;">訂購伴手禮</h1><br>
+<!-- 報名處-s -->
+
+    <div id="form_1">
+        <form action="php/buy.php" method="POST">
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="name" style="font-size:26px;">訂購者</label>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="phone" style="font-size:26px;">連絡電話</label>
+                <input name="phone" type="text" class="form-control" id="phone" placeholder="09xx-xxxxxx">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="address" style="font-size:26px;">寄送住址</label>
+              <input name="address" type="text" class="form-control" id="phone" placeholder="">
+            </div>
+
+            <div class="form-group col-md-6">
+              <label for="payment" style="font-size:26px;">付款方式</label><br>
+
+              <input type="radio" name="radio" id="radio" value="取貨付款">
+              <span style="font-size:26px;">取貨付款</span>
+              <input type="radio" name="radio" id="radio" value="線上付款">
+              <span style="font-size:26px;">線上付款</span>
+            </div>
+
+            <div class="form-group col-md-3">
+              <label for="product" style="font-size:22px;">【社頭鄉農會】芭樂心葉茶</label>
+            </div>
+            <div class="form-group col-md-3">
+              <input name="T1" type="int" class="form-control" id="phone" placeholder="數量(沒有就留空)">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="product" style="font-size:21px;">【社頭鄉農會】8樂鮮果禮盒</label>
+            </div>
+            <div class="form-group col-md-3">
+              <input name="T2" type="int" class="form-control" id="phone" placeholder="數量(沒有就留空)">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="product" style="font-size:22px;">極抗臭超機能竹炭運動襪</label>
+            </div>
+            <div class="form-group col-md-3">
+              <input name="T3" type="int" class="form-control" id="phone" placeholder="數量(沒有就留空)">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="product" style="font-size:22px;">極抗臭兒童休閒襪6~9歲</label>
+            </div>
+            <div class="form-group col-md-3">
+              <input name="T4" type="int" class="form-control" id="phone" placeholder="數量(沒有就留空)">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="product" style="font-size:22px;">河童君襪子娃娃DIY組合包</label>
+            </div>
+            <div class="form-group col-md-3">
+              <input name="T5" type="int" class="form-control" id="phone" placeholder="數量(沒有就留空)">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="product" style="font-size:22px;">壼底油-原味初釀</label>
+            </div>
+            <div class="form-group col-md-3">
+              <input name="T6" type="int" class="form-control" id="phone" placeholder="數量(沒有就留空)">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="product" style="font-size:22px;">醇壺底-黑豆蔭油</label>
+            </div>
+            <div class="form-group col-md-3">
+              <input name="T7" type="int" class="form-control" id="phone" placeholder="數量(沒有就留空)">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="product" style="font-size:22px;">傳統豆腐乳(甜酒口味)</label>
+            </div>
+            <div class="form-group col-md-3">
+              <input name="T8" type="int" class="form-control" id="phone" placeholder="數量(沒有就留空)">
+            </div>
+            
+                <input class="btn btn-info" type="submit" name="button" id="button" value="確認結帳">
+        <!-- </div> -->    
+    </form>
+    </div>
+</div>
+</section>
+
+
+
+
+
+<!-- 單筆訂單查詢-e -->
+<br id=check><br><br><br><br>
+<section>
+<div class="container" style="padding-bottom: 30px;">   
+<h1 style="margin:0 auto;font-size: 36px; text-align: center;">訂單查詢</h1><br>
+<!-- 報名處-s -->
+
+    <div id="form_1">
+        <form action="php/check.php" method="POST">
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="orderid" style="font-size:26px;">訂單編號</label>
+                <input name="orderid" type="text" class="form-control" id="orderid" placeholder="t000X">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="name" style="font-size:26px;">訂購者</label>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+           
+                <input class="btn btn-info" type="submit" name="button" id="button" value="查詢">
+        <!-- </div> -->    
+    </form>
+    </div>
+</div>
+</section>
+<!-- 單筆訂單查詢-s -->
+
+
+<!-- 全部訂單查詢-e -->
+<br id=allcheck><br><br><br><br>
+<section>
+<div class="container" style="padding-bottom: 30px;">   
+<h1 style="margin:0 auto;font-size: 36px; text-align: center;">所有交易查詢</h1><br>
+<!-- 報名處-s -->
+
+    <div id="form_1">
+        <form action="php/allcheck.php" method="POST">
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for=" name" style="font-size:26px;">訂購者</label>
+                <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="name" style="font-size:26px;">訂購者電話</label>
+                <input name="phone" type="text" class="form-control" id="phone" placeholder="09xx-xxxxxx">
+            </div>
+           
+                <input class="btn btn-info" type="submit" name="button" id="button" value="查詢">
+        <!-- </div> -->    
+    </form>
+    </div>
+</div>
+</section>
+<!-- 單筆訂單查詢-s -->
+
+
+
+
+
+
+
+<!-- Footer Section -->
+
+<section >
+  <div class="py-4" style="background-color: #a2b59f">
+    <div class="container">
+      <div class="row">
+
+      <div class="col-lg-6" style="background-color: #a2b59f">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172361.43099239728!2d120.5159116340244!3d23.917620266060133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469344583e968d5%3A0xc43658840c70a3c!2zNTEx5b2w5YyW57ij56S-6aCt6YSJ56S-6aCt!5e0!3m2!1szh-TW!2stw!4v1655367812050!5m2!1szh-TW!2stw" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+      </div>
+
+
+      <div class="col-lg-6" style="background-color: #a2b59f">
+<!-- 基本樣版參考 -->
+<!-- 
+        <form action="order.php">
+          <label for=""></label>
+          <input type="text" class="form-control" id="" placeholder="">
+         </form>
+ -->      
+     <h4 style="background-color: #a2b59f">網頁建議回饋單</h4>    
+
+    <div id="form" style="background-color: #a2b59f">
+      <form action="php/error.php" method="POST" target="nm_iframe">
+
+        <div class="form-row" style="background-color: #a2b59f">
+          <div class="form-group col-md-6" style="background-color:#a2b59f">
+            <label for="name" style="background-color:#a2b59f">客戶姓名</label>
+            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
+          </div>
+          <div class="form-group col-md-6" style="background-color:#a2b59f">
+            <label for="phone" style="background-color:#a2b59f">連絡電話</label>
+            <input name="phone" type="text" class="form-control" id="phone" placeholder="09XX-XXXXXX">
+          </div>
+          <div class="form-group col-md-6" style="background-color:#a2b59f">
+            <label for="email" style="background-color:#a2b59f">聯絡信箱</label>
+            <input name="email" type="text" class="form-control" id="email" placeholder="abc@XXX.com">
+          </div>
+          <div class="form-group col-md-6" style="background-color:#a2b59f">
+            <label for="mes" style="background-color:#a2b59f">留言日期</label>
+            <input name="mes" type="date" class="form-control" id="mes" placeholder="yyyy-mm-dd">
+          </div>
+
+          </div>
+          <div class="form-group" style="background-color:#a2b59f">
+           
+            <label for="suggest" style="background-color:#a2b59f">改善建議</label>
+            <input name="suggest" type="text" class="form-control" id="suggest" placeholder="建議、想法">
+          </div>
+
+          <input name="button" type="submit" class="btn btn-info" id="button" value="送出" onclick="window.alert('回饋表單已送出，請重新載入頁面，感謝您的建議!')">
+          
+      </form>
+      <iframe id="id_iframe" name="nm_iframe" style="display:none;"></iframe>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GoogleMap地圖 & form 表單-e -->
+
+
+<!-- 回到頁首的按鈕-s -->
+<a id="backtotop" href="#">
+      <img src="images/backtotop.png" style="width:36px; height:36px; ">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+<!-- 回到頁首-e -->
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</html>
